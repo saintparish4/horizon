@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Antler"
+version ="1.0.0"
+description = "Enterprise AI Memory Infrastructure"
+readme = "README.md"
+authors = [
+    {name = "Sharif Parish", email = "sharifparish4@gmail.com"}
+]
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy",
+    "psycopg2-binary",
+    "pgvector",
+    "pydantic",
+    "pydantic-settings",
+    "python-dotenv",
+    "openai",
+    "alembic",
+    "python-jose[cryptography]",
+    "passlib[bcrypt]",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "httpx",
+    "black",
+    "isort",
+    "numpy",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.setuptools]
+packages = ["config", "models", "routes", "services"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
