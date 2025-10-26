@@ -7,12 +7,20 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 from typing import Generator, final
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # ====== DATABASE CONFIGURATION ======
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
     "postgresql://postgres:postgres@localhost:5432/antler" # default local development database (change later)
 )
+
+# Fix DATABASE_URL scheme: SQLAlchemy 1.4+ requires 'postgresql://' instead of 'postgres://'
+if DATABASE_URL and DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
 
 # ======  CREATE SQLALCHEMY ENGINE ======
 engine = create_engine(

@@ -23,6 +23,7 @@ env/
 # Environment variables
 .env
 .env.local
+.api_key
 
 # IDE
 .vscode/
@@ -34,4 +35,3 @@ env/
 # OS
 .DS_Store
 Thumbs.db
-

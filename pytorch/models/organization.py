@@ -49,8 +49,8 @@ class Organization(Base):
 
     @staticmethod
     def generate_api_key() -> str:
-        """Generate a secure random API key"""
-        return f"mem_{secrets.token_urlsafe(48)}"
+        """Generate a secure random API key (max 64 chars)"""
+        return f"mem_{secrets.token_urlsafe(44)}"  # 44 bytes = ~59 chars + "mem_" = ~63 chars total
 
     def __repr__(self):
         return f"<Organization(id={self.id}, name='{self.name}', plan='{self.plan_type.value}')>"

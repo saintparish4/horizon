@@ -29,7 +29,7 @@ class Memory(Base):
     session_id = Column(String(255), nullable=True, index=True)  # Session/conversation identifier
     
     # Metadata and tags
-    metadata = Column(JSON, default=dict, nullable=True)  # Flexible JSON metadata
+    meta = Column("metadata", JSON, default=dict, nullable=True)  # Flexible JSON metadata (column name is 'metadata')
     tags = Column(ARRAY(String), default=list, nullable=True)  # Array of tags for categorization
     
     # Timestamps
