@@ -4,7 +4,7 @@ Memory model for storing contextual information with vector embeddings
 from sqlalchemy import Column, String, Integer, DateTime, ForeignKey, Text, JSON, ARRAY, Index
 from sqlalchemy.orm import relationship
 from pgvector.sqlalchemy import Vector
-from datetime import datetime
+from datetime import datetime, timezone 
 
 from config.database import Base
 
@@ -33,9 +33,9 @@ class Memory(Base):
     tags = Column(ARRAY(String), default=list, nullable=True)  # Array of tags for categorization
     
     # Timestamps
-    created_at = Column(DateTime, default=datetime.utcnow, nullable=False, index=True)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow, nullable=False)
-    accessed_at = Column(DateTime, default=datetime.utcnow, nullable=False)  # Track last access for analytics
+    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False, index=True)
+    updated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc), nullable=False)
+    accessed_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)  # Track last access for analytics
     
     # Relationships
     organization = relationship("Organization", back_populates="memories")
