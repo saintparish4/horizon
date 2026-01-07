@@ -6,67 +6,58 @@ const footerSections = [
   {
     title: 'Product',
     links: [
-      { label: 'Dedicated deployments', href: '#' },
-      { label: 'Model APIs', href: '#' },
-      { label: 'Training', href: '#' },
-      { label: 'Inference Stack', href: '#', isHeader: true, className: 'mt-8' },
-      { label: 'Model Runtimes', href: '#' },
-      { label: 'Infrastructure', href: '#' },
-      { label: 'Multi-cloud Capacity Management', href: '#' },
-      { label: 'Developer Experience', href: '#', isHeader: true, className: 'mt-8' },
-      { label: 'Chains', href: '#' },
-      { label: 'Model management', href: '#' },
+      { label: 'Features', href: '/features' },
+      { label: 'Semantic Search', href: '/features#search' },
+      { label: 'Context Management', href: '/features#context' },
+      { label: 'Memory Collections', href: '/features#collections' },
+      { label: 'Integrations', href: '#', isHeader: true, className: 'mt-8' },
+      { label: 'LangChain', href: '/integrations/langchain' },
+      { label: 'AutoGPT', href: '/integrations/autogpt' },
+      { label: 'OpenAI', href: '/integrations/openai' },
+      { label: 'All Integrations', href: '/integrations' },
     ],
   },
   {
-    title: 'Deployment options',
+    title: 'Solutions',
     links: [
-      { label: 'Baseten Cloud', href: '#' },
-      { label: 'Self-hosted', href: '#' },
-      { label: 'Hybrid', href: '#' },
-      { label: 'Solutions', href: '#', isHeader: true, className: 'mt-8' },
-      { label: 'Enterprise', href: '#' },
-      { label: 'Transcription', href: '#' },
-      { label: 'Image generation', href: '#' },
-      { label: 'Text-to-speech', href: '#' },
-      { label: 'Large language models', href: '#' },
-      { label: 'Compound AI', href: '#' },
-      { label: 'Embeddings', href: '#' },
-      { label: 'Startup program', href: '#' },
+      { label: 'Chatbots', href: '/solutions/chatbots' },
+      { label: 'AI Agents', href: '/solutions/agents' },
+      { label: 'Personal Assistants', href: '/solutions/assistants' },
+      { label: 'Customer Support', href: '/solutions/support' },
+      { label: 'Plans', href: '#', isHeader: true, className: 'mt-8' },
+      { label: 'Free', href: '/pricing' },
+      { label: 'Pro', href: '/pricing' },
+      { label: 'Enterprise', href: '/pricing' },
+      { label: 'Startup Program', href: '/startup-program' },
     ],
   },
   {
     title: 'Developer',
     links: [
-      { label: 'Documentation', href: '#' },
-      { label: 'Model library', href: '#' },
-      { label: 'Changelog', href: '#' },
+      { label: 'Documentation', href: '/docs' },
+      { label: 'API Reference', href: '/docs/api' },
+      { label: 'Python SDK', href: '/docs/sdk/python' },
+      { label: 'JavaScript SDK', href: '/docs/sdk/javascript' },
+      { label: 'Changelog', href: '/changelog' },
       { label: 'Resources', href: '#', isHeader: true, className: 'mt-8' },
-      { label: 'Research', href: '#' },
-      { label: 'Blog', href: '#' },
-      { label: 'Guides', href: '#' },
-      { label: 'Events', href: '#' },
-      { label: 'Customers', href: '#' },
-      { label: 'Trust', href: '#' },
-      { label: 'Partner', href: '#' },
-      { label: 'Careers', href: '#' },
-      { label: 'Contact us', href: '#' },
+      { label: 'Blog', href: '/blog' },
+      { label: 'Guides', href: '/guides' },
+      { label: 'Examples', href: '/examples' },
+      { label: 'Community', href: '/community' },
     ],
   },
   {
-    title: 'Popular models',
+    title: 'Company',
     links: [
-      { label: 'GLM 4.7', href: '#' },
-      { label: 'DeepSeek V3.2', href: '#' },
-      { label: 'GPT OSS 120B', href: '#' },
-      { label: 'Kimi K2 Thinking', href: '#' },
-      { label: 'Orpheus TTS', href: '#' },
-      { label: 'Qwen3 Coder 480B', href: '#' },
-      { label: 'Explore all', href: '#' },
-      { label: 'Legal', href: '#', isHeader: true, className: 'mt-12' },
-      { label: 'Terms and Conditions', href: '#' },
-      { label: 'Privacy Policy', href: '#' },
-      { label: 'Service Level Agreement', href: '#' },
+      { label: 'About', href: '/about' },
+      { label: 'Careers', href: '/careers' },
+      { label: 'Contact', href: '/contact' },
+      { label: 'Status', href: '/status' },
+      { label: 'Legal', href: '#', isHeader: true, className: 'mt-8' },
+      { label: 'Terms of Service', href: '/terms' },
+      { label: 'Privacy Policy', href: '/privacy' },
+      { label: 'Security', href: '/security' },
+      { label: 'SLA', href: '/sla' },
     ],
   },
 ];
@@ -78,14 +69,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8">
           {/* Logo and Social Section */}
           <div className="md:col-span-3 lg:col-span-4 flex flex-col gap-8">
-            <div className="mb-4">
-              <Image 
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/8b29c68a-eaca-476e-a7ce-c0f16902fd64-baseten-co/assets/images/1764774959-lockup_horizontal_2d_light-1.png"
-                alt="Baseten"
-                width={131}
-                height={34}
-                className="brightness-0 invert"
-              />
+            <div className="mb-4 flex items-center gap-3">
+              <span className="text-3xl">🦌</span>
+              <span className="text-2xl font-semibold tracking-tight text-white">Antler</span>
             </div>
             <div className="flex gap-4">
               <a href="#" className="p-1 hover:text-mint transition-colors duration-200">
@@ -151,7 +137,7 @@ const Footer = () => {
 
           <div className="flex flex-col sm:flex-row items-center gap-8 md:gap-12">
             <span className="font-mono text-[11px] text-[#737373]">
-              © 2025 BASETEN
+              © 2025 ANTLER
             </span>
             <div className="flex items-center gap-6 opacity-60">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-8 w-auto">

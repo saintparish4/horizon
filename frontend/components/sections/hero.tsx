@@ -24,23 +24,23 @@ const HeroSection = () => {
             
             <div className="relative">
               <h1 className="font-sans text-[3.5rem] md:text-[6rem] lg:text-[7.5rem] font-semibold tracking-[-0.04em] leading-[1.05] text-[#0D0D0D] -mt-2">
-                Inference is <br /> everything
+                Memory <br /> infrastructure
               </h1>
             </div>
 
             <div className="relative max-w-[480px]">
               <p className="font-sans text-xl md:text-2xl leading-[1.4] text-[#0D0D0D] text-pretty">
-                The fastest model runtimes, cross-cloud high availability, and seamless developer workflows. Powered by the Baseten Inference Stack.
+                So your AI systems remember, learn, and get smarter over time. Built for agents that need persistent, intelligent memory.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="https://login.baseten.co/sign-up"
+                href="/signup"
                 className="group relative inline-flex items-center justify-center gap-3 px-6 py-3 bg-[#0D0D0D] text-white font-mono text-sm uppercase tracking-tight overflow-hidden transition-all duration-200 hover:bg-[#00FF7F] hover:text-[#0D0D0D]"
               >
                 <div className="absolute inset-0 bg-[#00FF7F] translate-y-full transition-transform duration-200 ease-out group-hover:translate-y-0" />
-                <span className="relative z-10">Get started</span>
+                <span className="relative z-10">Get started free</span>
                 <span className="relative z-10 transition-transform duration-200 group-hover:translate-x-1">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <path d="M1 7h12M13 7l-4-4M13 7l-4 4" strokeLinecap="round" strokeLinejoin="round"/>
@@ -49,11 +49,11 @@ const HeroSection = () => {
               </a>
 
               <a 
-                href="/talk-to-us/"
+                href="/docs"
                 className="group relative inline-flex items-center justify-center gap-3 px-6 py-3 bg-white border border-[#E5E7EB] text-[#0D0D0D] font-mono text-sm uppercase tracking-tight overflow-hidden transition-all duration-200 hover:border-[#0D0D0D]"
               >
                 <div className="absolute inset-0 bg-[#F5F5F5] translate-y-full transition-transform duration-200 ease-out group-hover:translate-y-0" />
-                <span className="relative z-10">Talk to an engineer</span>
+                <span className="relative z-10">View documentation</span>
                 <span className="relative z-10 transition-transform duration-200 group-hover:translate-x-1">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <path d="M1 7h12M13 7l-4-4M13 7l-4 4" strokeLinecap="round" strokeLinejoin="round"/>
@@ -69,7 +69,7 @@ const HeroSection = () => {
               {/* Prioritizing requested globe illustration asset */}
               <img 
                 src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/8b29c68a-eaca-476e-a7ce-c0f16902fd64-baseten-co/assets/svgs/globe-illustration-1.svg" 
-                alt="Baseten Inference Infrastructure Illustration" 
+                alt="Antler Memory Infrastructure Illustration" 
                 className="w-full h-full object-contain select-none pointer-events-none scale-125"
               />
               

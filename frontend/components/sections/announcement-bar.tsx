@@ -1,10 +1,9 @@
-thought
 import React from 'react';
 
 /**
  * AnnouncementBar Component
  * 
- * Clones the bright green announcement bar at the top of the Baseten website.
+ * Displays announcement banner for Antler memory infrastructure.
  * Features:
  * - Solid #00FF7F (Mint Green) background
  * - Black monospaced uppercase text for the CTA
@@ -16,14 +15,14 @@ const AnnouncementBar = () => {
     <div className="bg-[#00FF7F] w-full px-4 py-2 border-b border-black/5">
       <div className="max-w-[1296px] mx-auto flex flex-col md:flex-row md:items-center md:justify-center gap-2 text-[14px] md:text-[15px] font-sans text-[#0D0D0D] font-medium leading-relaxed">
         <span className="text-center md:text-left">
-          Baseten acquires Parsed: Own your intelligence by unifying training and inference.
+          Now in beta: Give your AI agents long-term memory with semantic search and context management.
         </span>
         
         <a 
-          href="https://www.baseten.co/blog/parsed-baseten"
+          href="/beta"
           className="group inline-flex items-center justify-center gap-1 font-mono text-sm uppercase underline underline-offset-4 decoration-1 transition-colors duration-100 hover:text-[#0D0D0D]"
         >
-          <span>READ</span>
+          <span>JOIN BETA</span>
           <svg 
             width="1.5em" 
             height="1.5em" 

@@ -71,7 +71,7 @@ todos:
 
 ## Technical Architecture Overview
 
-```mermaid
+`````mermaid
 graph TB
     subgraph ClientLayer[Client Layer]
         PythonSDK[Python SDK]
@@ -1773,4 +1773,5 @@ class BillingService:
 4. **Week 4**: Unit tests, integration tests, API documentation
 5. **Week 5-6**: Python and JavaScript SDK development
 6. **Week 7-8**: Deployment infrastructure, CI/CD, monitoring
-7. **Week 9-10**: Advanced features (deduplication, webhooks, collections)
+
+`````
