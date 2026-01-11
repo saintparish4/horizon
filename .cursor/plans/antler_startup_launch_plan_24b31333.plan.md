@@ -90,7 +90,7 @@ Production-grade deployment:
 - **CI/CD**: GitHub Actions for automated testing and deployment
 - **Monitoring**: Sentry for errors, Prometheus + Grafana for metrics
 - **Security**: SSL/TLS, environment variables in secrets manager, API key encryption
-```mermaid
+````mermaid
 graph LR
     Client[Client SDK] -->|API Key| Gateway[API Gateway]
     Gateway --> Auth[Auth Middleware]
@@ -452,4 +452,5 @@ If choosing to bootstrap instead:
 3. **Deploy infrastructure**: Provision Railway/Render backend + Neon PostgreSQL
 4. **Create landing page waitlist**: Add email capture to [`frontend/app/page.tsx`](frontend/app/page.tsx)
 5. **Investor research**: Build CRM of 50 target seed investors
-6. **Design partner outreach**: Email 20 potential beta customers
+
+````
