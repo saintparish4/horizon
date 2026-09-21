@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      # The integration tests are the ones worth having. pgserver ships its own
+      # PostgreSQL 16 + pgvector, so there is no service container to wait on —
+      # but if it ever fails to start, conftest.py would skip silently and CI
+      # would go green having tested nothing. This makes that a hard failure.
+      HORIZON_REQUIRE_DB: "1"
+      API_KEY_PEPPER: ci-pepper
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install
+        run: make install
+
+      - name: Lint, typecheck, test
+        run: make check
+
+      - name: Assert the integration tests actually ran
+        run: |
+          .venv/bin/python -m pytest tests/ -q --no-header -rs > pytest.log 2>&1 || {
+            cat pytest.log; exit 1;
+          }
+          cat pytest.log
+          if grep -qE '[0-9]+ skipped' pytest.log; then
+            echo "::error::Tests were skipped — the database did not start."
+            exit 1
+          fi
