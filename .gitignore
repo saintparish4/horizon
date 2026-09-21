@@ -25,6 +25,11 @@ env/
 .env.local
 .api_key
 
+# Tooling caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
 # IDE
 .vscode/
 .idea/
@@ -37,3 +42,6 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+# uv / virtualenv
+.venv/
+

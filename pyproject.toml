@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "horizon"
+version = "0.1.0"
+description = "Memory infrastructure and memory-aware routing for AI agent systems"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Sharif Parish", email = "saintparish6@gmail.com" }]
+
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "sqlalchemy[asyncio]>=2.0.36",
+    "asyncpg>=0.30",
+    "pgvector>=0.3.6",
+    "alembic>=1.14",
+    "pydantic[email]>=2.10",
+    "pydantic-settings>=2.7",
+    "openai>=1.59",
+    "httpx>=0.28",
+    "structlog>=24.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.25",
+    "anyio>=4.7",
+    "ruff>=0.8",
+    "mypy>=1.14",
+    # Self-contained PostgreSQL 16 + pgvector, so tests and the benchmark run
+    # against the real database with no Docker and no system Postgres.
+    "pgserver>=0.1.4",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["horizon"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+# One event loop for the whole session. The SQLAlchemy engine is created at
+# import time and its asyncpg pool binds to the loop that made it; a fresh loop
+# per test would invalidate every pooled connection.
+asyncio_default_fixture_loop_scope = "session"
+asyncio_default_test_loop_scope = "session"
+testpaths = ["tests"]
+
+[tool.ruff.lint.per-file-ignores]
+# Migrations are generated-style column lists; long lines are more readable
+# than wrapping every sa.Column call.
+"migrations/versions/*.py" = ["E501"]
