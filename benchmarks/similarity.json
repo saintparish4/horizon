@@ -1,0 +1,918 @@
+{
+  "deterministic-template": {
+    "config": {
+      "per_family": 60,
+      "seed": 42,
+      "embeddings": "deterministic",
+      "phrasing": "template"
+    },
+    "within_family": {
+      "n": 7080,
+      "p01": 0.7272727272727273,
+      "p05": 0.7272727272727273,
+      "p25": 0.8181818181818182,
+      "p50": 0.8333333333333336,
+      "p75": 0.9090909090909092,
+      "p95": 0.9473684210526316,
+      "p99": 1.0000000000000002,
+      "mean": 0.845053287108372
+    },
+    "between_family": {
+      "n": 21600,
+      "p01": 0.0,
+      "p05": 0.0,
+      "p25": 0.0662266178532522,
+      "p50": 0.08703882797784893,
+      "p75": 0.17407765595569785,
+      "p95": 0.19867985355975662,
+      "p99": 0.19867985355975662,
+      "mean": 0.11304086292812965
+    },
+    "within_by_family": {
+      "code_review": {
+        "n": 1770,
+        "p01": 0.7500000000000002,
+        "p05": 0.7500000000000002,
+        "p25": 0.7500000000000002,
+        "p50": 0.8333333333333336,
+        "p75": 0.916666666666667,
+        "p95": 0.916666666666667,
+        "p99": 1.0000000000000002,
+        "mean": 0.8348870056497177
+      },
+      "sql_generation": {
+        "n": 1770,
+        "p01": 0.8421052631578948,
+        "p05": 0.8421052631578948,
+        "p25": 0.8421052631578948,
+        "p50": 0.8947368421052632,
+        "p75": 0.9473684210526316,
+        "p95": 0.9473684210526316,
+        "p99": 1.0,
+        "mean": 0.8949152542372881
+      },
+      "summarization": {
+        "n": 1770,
+        "p01": 0.7500000000000002,
+        "p05": 0.7500000000000002,
+        "p25": 0.7500000000000002,
+        "p50": 0.8333333333333336,
+        "p75": 0.916666666666667,
+        "p95": 0.916666666666667,
+        "p99": 1.0000000000000002,
+        "mean": 0.8330508474576274
+      },
+      "translation": {
+        "n": 1770,
+        "p01": 0.7272727272727273,
+        "p05": 0.7272727272727273,
+        "p25": 0.7272727272727273,
+        "p50": 0.8181818181818182,
+        "p75": 0.9090909090909092,
+        "p95": 0.9090909090909092,
+        "p99": 1.0,
+        "mean": 0.8173600410888547
+      }
+    },
+    "recommended": {
+      "best_separation": {
+        "threshold": 0.4,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      "conservative_1pct_leak": {
+        "threshold": 0.4,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      }
+    },
+    "grid": [
+      {
+        "threshold": 0.4,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.41,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.42,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.43,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.44,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.45,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.46,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.47,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.48,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.49,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.5,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.51,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.52,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.53,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.54,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.55,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.56,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.57,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.58,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.59,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.6,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.61,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.62,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.63,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.64,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.65,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.66,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.67,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.68,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.69,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.7,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.71,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.72,
+        "within_kept": 1.0,
+        "between_admitted": 0.0,
+        "youden_j": 1.0
+      },
+      {
+        "threshold": 0.73,
+        "within_kept": 0.9234463276836158,
+        "between_admitted": 0.0,
+        "youden_j": 0.9234463276836158
+      },
+      {
+        "threshold": 0.74,
+        "within_kept": 0.9234463276836158,
+        "between_admitted": 0.0,
+        "youden_j": 0.9234463276836158
+      },
+      {
+        "threshold": 0.75,
+        "within_kept": 0.9234463276836158,
+        "between_admitted": 0.0,
+        "youden_j": 0.9234463276836158
+      },
+      {
+        "threshold": 0.76,
+        "within_kept": 0.7798022598870057,
+        "between_admitted": 0.0,
+        "youden_j": 0.7798022598870057
+      },
+      {
+        "threshold": 0.77,
+        "within_kept": 0.7798022598870057,
+        "between_admitted": 0.0,
+        "youden_j": 0.7798022598870057
+      },
+      {
+        "threshold": 0.78,
+        "within_kept": 0.7798022598870057,
+        "between_admitted": 0.0,
+        "youden_j": 0.7798022598870057
+      },
+      {
+        "threshold": 0.79,
+        "within_kept": 0.7798022598870057,
+        "between_admitted": 0.0,
+        "youden_j": 0.7798022598870057
+      },
+      {
+        "threshold": 0.8,
+        "within_kept": 0.7798022598870057,
+        "between_admitted": 0.0,
+        "youden_j": 0.7798022598870057
+      },
+      {
+        "threshold": 0.81,
+        "within_kept": 0.7798022598870057,
+        "between_admitted": 0.0,
+        "youden_j": 0.7798022598870057
+      },
+      {
+        "threshold": 0.82,
+        "within_kept": 0.6718926553672316,
+        "between_admitted": 0.0,
+        "youden_j": 0.6718926553672316
+      },
+      {
+        "threshold": 0.83,
+        "within_kept": 0.6718926553672316,
+        "between_admitted": 0.0,
+        "youden_j": 0.6718926553672316
+      },
+      {
+        "threshold": 0.84,
+        "within_kept": 0.44463276836158194,
+        "between_admitted": 0.0,
+        "youden_j": 0.44463276836158194
+      },
+      {
+        "threshold": 0.85,
+        "within_kept": 0.3721751412429379,
+        "between_admitted": 0.0,
+        "youden_j": 0.3721751412429379
+      },
+      {
+        "threshold": 0.86,
+        "within_kept": 0.3721751412429379,
+        "between_admitted": 0.0,
+        "youden_j": 0.3721751412429379
+      },
+      {
+        "threshold": 0.87,
+        "within_kept": 0.3721751412429379,
+        "between_admitted": 0.0,
+        "youden_j": 0.3721751412429379
+      },
+      {
+        "threshold": 0.88,
+        "within_kept": 0.3721751412429379,
+        "between_admitted": 0.0,
+        "youden_j": 0.3721751412429379
+      },
+      {
+        "threshold": 0.89,
+        "within_kept": 0.3721751412429379,
+        "between_admitted": 0.0,
+        "youden_j": 0.3721751412429379
+      },
+      {
+        "threshold": 0.9,
+        "within_kept": 0.2600282485875706,
+        "between_admitted": 0.0,
+        "youden_j": 0.2600282485875706
+      },
+      {
+        "threshold": 0.91,
+        "within_kept": 0.20324858757062148,
+        "between_admitted": 0.0,
+        "youden_j": 0.20324858757062148
+      },
+      {
+        "threshold": 0.92,
+        "within_kept": 0.0925141242937853,
+        "between_admitted": 0.0,
+        "youden_j": 0.0925141242937853
+      },
+      {
+        "threshold": 0.93,
+        "within_kept": 0.0925141242937853,
+        "between_admitted": 0.0,
+        "youden_j": 0.0925141242937853
+      },
+      {
+        "threshold": 0.94,
+        "within_kept": 0.0925141242937853,
+        "between_admitted": 0.0,
+        "youden_j": 0.0925141242937853
+      },
+      {
+        "threshold": 0.95,
+        "within_kept": 0.03502824858757062,
+        "between_admitted": 0.0,
+        "youden_j": 0.03502824858757062
+      },
+      {
+        "threshold": 0.96,
+        "within_kept": 0.03502824858757062,
+        "between_admitted": 0.0,
+        "youden_j": 0.03502824858757062
+      },
+      {
+        "threshold": 0.97,
+        "within_kept": 0.03502824858757062,
+        "between_admitted": 0.0,
+        "youden_j": 0.03502824858757062
+      },
+      {
+        "threshold": 0.98,
+        "within_kept": 0.03502824858757062,
+        "between_admitted": 0.0,
+        "youden_j": 0.03502824858757062
+      },
+      {
+        "threshold": 0.99,
+        "within_kept": 0.03502824858757062,
+        "between_admitted": 0.0,
+        "youden_j": 0.03502824858757062
+      },
+      {
+        "threshold": 1.0,
+        "within_kept": 0.03502824858757062,
+        "between_admitted": 0.0,
+        "youden_j": 0.03502824858757062
+      }
+    ]
+  },
+  "deterministic-paraphrase": {
+    "config": {
+      "per_family": 60,
+      "seed": 42,
+      "embeddings": "deterministic",
+      "phrasing": "paraphrase"
+    },
+    "within_family": {
+      "n": 7080,
+      "p01": 0.0716114874039433,
+      "p05": 0.08333333333333336,
+      "p25": 0.1825741858350554,
+      "p50": 0.2611164839335468,
+      "p75": 0.670820393249937,
+      "p95": 0.916666666666667,
+      "p99": 0.9473684210526316,
+      "mean": 0.3866612308700056
+    },
+    "between_family": {
+      "n": 21600,
+      "p01": 0.0,
+      "p05": 0.0,
+      "p25": 0.07412493166611013,
+      "p50": 0.08770580193070293,
+      "p75": 0.16012815380508716,
+      "p95": 0.25000000000000006,
+      "p99": 0.4003203845127179,
+      "mean": 0.11222142140409751
+    },
+    "within_by_family": {
+      "code_review": {
+        "n": 1770,
+        "p01": 0.07905694150420949,
+        "p05": 0.09534625892455924,
+        "p25": 0.1825741858350554,
+        "p50": 0.2860387767736777,
+        "p75": 0.5222329678670936,
+        "p95": 0.9090909090909092,
+        "p99": 0.9428090415820635,
+        "mean": 0.3933375479162712
+      },
+      "sql_generation": {
+        "n": 1770,
+        "p01": 0.07412493166611013,
+        "p05": 0.07412493166611013,
+        "p25": 0.14824986333222026,
+        "p50": 0.2223747949983304,
+        "p75": 0.3181423814878889,
+        "p95": 0.9230769230769231,
+        "p99": 0.9473684210526316,
+        "mean": 0.34737895569874977
+      },
+      "summarization": {
+        "n": 1770,
+        "p01": 0.0716114874039433,
+        "p05": 0.1432229748078866,
+        "p25": 0.22360679774997902,
+        "p50": 0.3076923076923077,
+        "p75": 0.5604485383178051,
+        "p95": 0.916666666666667,
+        "p99": 0.9333333333333333,
+        "mean": 0.417798066368309
+      },
+      "translation": {
+        "n": 1770,
+        "p01": 0.0,
+        "p05": 0.08333333333333336,
+        "p25": 0.1666666666666667,
+        "p50": 0.27386127875258315,
+        "p75": 0.7500000000000002,
+        "p95": 0.916666666666667,
+        "p99": 0.916666666666667,
+        "mean": 0.3881303534966925
+      }
+    },
+    "recommended": {
+      "best_separation": {
+        "threshold": 0.41,
+        "within_kept": 0.31031073446327684,
+        "between_admitted": 0.0,
+        "youden_j": 0.31031073446327684
+      },
+      "conservative_1pct_leak": {
+        "threshold": 0.41,
+        "within_kept": 0.31031073446327684,
+        "between_admitted": 0.0,
+        "youden_j": 0.31031073446327684
+      }
+    },
+    "grid": [
+      {
+        "threshold": 0.4,
+        "within_kept": 0.32245762711864406,
+        "between_admitted": 0.0125,
+        "youden_j": 0.30995762711864405
+      },
+      {
+        "threshold": 0.41,
+        "within_kept": 0.31031073446327684,
+        "between_admitted": 0.0,
+        "youden_j": 0.31031073446327684
+      },
+      {
+        "threshold": 0.42,
+        "within_kept": 0.31031073446327684,
+        "between_admitted": 0.0,
+        "youden_j": 0.31031073446327684
+      },
+      {
+        "threshold": 0.43,
+        "within_kept": 0.30903954802259886,
+        "between_admitted": 0.0,
+        "youden_j": 0.30903954802259886
+      },
+      {
+        "threshold": 0.44,
+        "within_kept": 0.2888418079096045,
+        "between_admitted": 0.0,
+        "youden_j": 0.2888418079096045
+      },
+      {
+        "threshold": 0.45,
+        "within_kept": 0.2879943502824859,
+        "between_admitted": 0.0,
+        "youden_j": 0.2879943502824859
+      },
+      {
+        "threshold": 0.46,
+        "within_kept": 0.286864406779661,
+        "between_admitted": 0.0,
+        "youden_j": 0.286864406779661
+      },
+      {
+        "threshold": 0.47,
+        "within_kept": 0.286864406779661,
+        "between_admitted": 0.0,
+        "youden_j": 0.286864406779661
+      },
+      {
+        "threshold": 0.48,
+        "within_kept": 0.286864406779661,
+        "between_admitted": 0.0,
+        "youden_j": 0.286864406779661
+      },
+      {
+        "threshold": 0.49,
+        "within_kept": 0.2713276836158192,
+        "between_admitted": 0.0,
+        "youden_j": 0.2713276836158192
+      },
+      {
+        "threshold": 0.5,
+        "within_kept": 0.2713276836158192,
+        "between_admitted": 0.0,
+        "youden_j": 0.2713276836158192
+      },
+      {
+        "threshold": 0.51,
+        "within_kept": 0.2713276836158192,
+        "between_admitted": 0.0,
+        "youden_j": 0.2713276836158192
+      },
+      {
+        "threshold": 0.52,
+        "within_kept": 0.2713276836158192,
+        "between_admitted": 0.0,
+        "youden_j": 0.2713276836158192
+      },
+      {
+        "threshold": 0.53,
+        "within_kept": 0.26073446327683614,
+        "between_admitted": 0.0,
+        "youden_j": 0.26073446327683614
+      },
+      {
+        "threshold": 0.54,
+        "within_kept": 0.26073446327683614,
+        "between_admitted": 0.0,
+        "youden_j": 0.26073446327683614
+      },
+      {
+        "threshold": 0.55,
+        "within_kept": 0.26073446327683614,
+        "between_admitted": 0.0,
+        "youden_j": 0.26073446327683614
+      },
+      {
+        "threshold": 0.56,
+        "within_kept": 0.26073446327683614,
+        "between_admitted": 0.0,
+        "youden_j": 0.26073446327683614
+      },
+      {
+        "threshold": 0.57,
+        "within_kept": 0.2528248587570621,
+        "between_admitted": 0.0,
+        "youden_j": 0.2528248587570621
+      },
+      {
+        "threshold": 0.58,
+        "within_kept": 0.2528248587570621,
+        "between_admitted": 0.0,
+        "youden_j": 0.2528248587570621
+      },
+      {
+        "threshold": 0.59,
+        "within_kept": 0.2528248587570621,
+        "between_admitted": 0.0,
+        "youden_j": 0.2528248587570621
+      },
+      {
+        "threshold": 0.6,
+        "within_kept": 0.2528248587570621,
+        "between_admitted": 0.0,
+        "youden_j": 0.2528248587570621
+      },
+      {
+        "threshold": 0.61,
+        "within_kept": 0.2515536723163842,
+        "between_admitted": 0.0,
+        "youden_j": 0.2515536723163842
+      },
+      {
+        "threshold": 0.62,
+        "within_kept": 0.2515536723163842,
+        "between_admitted": 0.0,
+        "youden_j": 0.2515536723163842
+      },
+      {
+        "threshold": 0.63,
+        "within_kept": 0.2515536723163842,
+        "between_admitted": 0.0,
+        "youden_j": 0.2515536723163842
+      },
+      {
+        "threshold": 0.64,
+        "within_kept": 0.2515536723163842,
+        "between_admitted": 0.0,
+        "youden_j": 0.2515536723163842
+      },
+      {
+        "threshold": 0.65,
+        "within_kept": 0.25042372881355934,
+        "between_admitted": 0.0,
+        "youden_j": 0.25042372881355934
+      },
+      {
+        "threshold": 0.66,
+        "within_kept": 0.25042372881355934,
+        "between_admitted": 0.0,
+        "youden_j": 0.25042372881355934
+      },
+      {
+        "threshold": 0.67,
+        "within_kept": 0.25042372881355934,
+        "between_admitted": 0.0,
+        "youden_j": 0.25042372881355934
+      },
+      {
+        "threshold": 0.68,
+        "within_kept": 0.2483050847457627,
+        "between_admitted": 0.0,
+        "youden_j": 0.2483050847457627
+      },
+      {
+        "threshold": 0.69,
+        "within_kept": 0.2483050847457627,
+        "between_admitted": 0.0,
+        "youden_j": 0.2483050847457627
+      },
+      {
+        "threshold": 0.7,
+        "within_kept": 0.2483050847457627,
+        "between_admitted": 0.0,
+        "youden_j": 0.2483050847457627
+      },
+      {
+        "threshold": 0.71,
+        "within_kept": 0.24449152542372882,
+        "between_admitted": 0.0,
+        "youden_j": 0.24449152542372882
+      },
+      {
+        "threshold": 0.72,
+        "within_kept": 0.24449152542372882,
+        "between_admitted": 0.0,
+        "youden_j": 0.24449152542372882
+      },
+      {
+        "threshold": 0.73,
+        "within_kept": 0.23968926553672315,
+        "between_admitted": 0.0,
+        "youden_j": 0.23968926553672315
+      },
+      {
+        "threshold": 0.74,
+        "within_kept": 0.23968926553672315,
+        "between_admitted": 0.0,
+        "youden_j": 0.23968926553672315
+      },
+      {
+        "threshold": 0.75,
+        "within_kept": 0.23926553672316384,
+        "between_admitted": 0.0,
+        "youden_j": 0.23926553672316384
+      },
+      {
+        "threshold": 0.76,
+        "within_kept": 0.21257062146892655,
+        "between_admitted": 0.0,
+        "youden_j": 0.21257062146892655
+      },
+      {
+        "threshold": 0.77,
+        "within_kept": 0.19491525423728814,
+        "between_admitted": 0.0,
+        "youden_j": 0.19491525423728814
+      },
+      {
+        "threshold": 0.78,
+        "within_kept": 0.19491525423728814,
+        "between_admitted": 0.0,
+        "youden_j": 0.19491525423728814
+      },
+      {
+        "threshold": 0.79,
+        "within_kept": 0.18926553672316385,
+        "between_admitted": 0.0,
+        "youden_j": 0.18926553672316385
+      },
+      {
+        "threshold": 0.8,
+        "within_kept": 0.18926553672316385,
+        "between_admitted": 0.0,
+        "youden_j": 0.18926553672316385
+      },
+      {
+        "threshold": 0.81,
+        "within_kept": 0.17584745762711865,
+        "between_admitted": 0.0,
+        "youden_j": 0.17584745762711865
+      },
+      {
+        "threshold": 0.82,
+        "within_kept": 0.16468926553672317,
+        "between_admitted": 0.0,
+        "youden_j": 0.16468926553672317
+      },
+      {
+        "threshold": 0.83,
+        "within_kept": 0.16398305084745762,
+        "between_admitted": 0.0,
+        "youden_j": 0.16398305084745762
+      },
+      {
+        "threshold": 0.84,
+        "within_kept": 0.12146892655367232,
+        "between_admitted": 0.0,
+        "youden_j": 0.12146892655367232
+      },
+      {
+        "threshold": 0.85,
+        "within_kept": 0.08629943502824859,
+        "between_admitted": 0.0,
+        "youden_j": 0.08629943502824859
+      },
+      {
+        "threshold": 0.86,
+        "within_kept": 0.08192090395480225,
+        "between_admitted": 0.0,
+        "youden_j": 0.08192090395480225
+      },
+      {
+        "threshold": 0.87,
+        "within_kept": 0.07641242937853107,
+        "between_admitted": 0.0,
+        "youden_j": 0.07641242937853107
+      },
+      {
+        "threshold": 0.88,
+        "within_kept": 0.07175141242937853,
+        "between_admitted": 0.0,
+        "youden_j": 0.07175141242937853
+      },
+      {
+        "threshold": 0.89,
+        "within_kept": 0.0711864406779661,
+        "between_admitted": 0.0,
+        "youden_j": 0.0711864406779661
+      },
+      {
+        "threshold": 0.9,
+        "within_kept": 0.0614406779661017,
+        "between_admitted": 0.0,
+        "youden_j": 0.0614406779661017
+      },
+      {
+        "threshold": 0.91,
+        "within_kept": 0.05409604519774011,
+        "between_admitted": 0.0,
+        "youden_j": 0.05409604519774011
+      },
+      {
+        "threshold": 0.92,
+        "within_kept": 0.03248587570621469,
+        "between_admitted": 0.0,
+        "youden_j": 0.03248587570621469
+      },
+      {
+        "threshold": 0.93,
+        "within_kept": 0.01807909604519774,
+        "between_admitted": 0.0,
+        "youden_j": 0.01807909604519774
+      },
+      {
+        "threshold": 0.94,
+        "within_kept": 0.012146892655367232,
+        "between_admitted": 0.0,
+        "youden_j": 0.012146892655367232
+      },
+      {
+        "threshold": 0.95,
+        "within_kept": 0.0074858757062146895,
+        "between_admitted": 0.0,
+        "youden_j": 0.0074858757062146895
+      },
+      {
+        "threshold": 0.96,
+        "within_kept": 0.0074858757062146895,
+        "between_admitted": 0.0,
+        "youden_j": 0.0074858757062146895
+      },
+      {
+        "threshold": 0.97,
+        "within_kept": 0.0074858757062146895,
+        "between_admitted": 0.0,
+        "youden_j": 0.0074858757062146895
+      },
+      {
+        "threshold": 0.98,
+        "within_kept": 0.0074858757062146895,
+        "between_admitted": 0.0,
+        "youden_j": 0.0074858757062146895
+      },
+      {
+        "threshold": 0.99,
+        "within_kept": 0.0074858757062146895,
+        "between_admitted": 0.0,
+        "youden_j": 0.0074858757062146895
+      },
+      {
+        "threshold": 1.0,
+        "within_kept": 0.0074858757062146895,
+        "between_admitted": 0.0,
+        "youden_j": 0.0074858757062146895
+      }
+    ]
+  }
+}

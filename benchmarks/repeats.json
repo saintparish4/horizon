@@ -1,0 +1,173 @@
+{
+  "config": {
+    "tasks": 1000,
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ]
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "oracle": {
+        "overall_accuracy": 0.901,
+        "final_accuracy": 0.916
+      },
+      "horizon": {
+        "overall_accuracy": 0.876,
+        "final_accuracy": 0.868
+      },
+      "capability": {
+        "overall_accuracy": 0.711,
+        "final_accuracy": 0.688
+      },
+      "random": {
+        "overall_accuracy": 0.424,
+        "final_accuracy": 0.368
+      }
+    },
+    {
+      "seed": 43,
+      "oracle": {
+        "overall_accuracy": 0.908,
+        "final_accuracy": 0.94
+      },
+      "horizon": {
+        "overall_accuracy": 0.894,
+        "final_accuracy": 0.936
+      },
+      "capability": {
+        "overall_accuracy": 0.716,
+        "final_accuracy": 0.748
+      },
+      "random": {
+        "overall_accuracy": 0.436,
+        "final_accuracy": 0.404
+      }
+    },
+    {
+      "seed": 44,
+      "oracle": {
+        "overall_accuracy": 0.919,
+        "final_accuracy": 0.904
+      },
+      "horizon": {
+        "overall_accuracy": 0.91,
+        "final_accuracy": 0.904
+      },
+      "capability": {
+        "overall_accuracy": 0.709,
+        "final_accuracy": 0.676
+      },
+      "random": {
+        "overall_accuracy": 0.458,
+        "final_accuracy": 0.436
+      }
+    },
+    {
+      "seed": 45,
+      "oracle": {
+        "overall_accuracy": 0.913,
+        "final_accuracy": 0.904
+      },
+      "horizon": {
+        "overall_accuracy": 0.898,
+        "final_accuracy": 0.9
+      },
+      "capability": {
+        "overall_accuracy": 0.693,
+        "final_accuracy": 0.676
+      },
+      "random": {
+        "overall_accuracy": 0.427,
+        "final_accuracy": 0.408
+      }
+    },
+    {
+      "seed": 46,
+      "oracle": {
+        "overall_accuracy": 0.909,
+        "final_accuracy": 0.936
+      },
+      "horizon": {
+        "overall_accuracy": 0.908,
+        "final_accuracy": 0.936
+      },
+      "capability": {
+        "overall_accuracy": 0.729,
+        "final_accuracy": 0.76
+      },
+      "random": {
+        "overall_accuracy": 0.461,
+        "final_accuracy": 0.456
+      }
+    }
+  ],
+  "aggregate": {
+    "oracle": {
+      "overall_accuracy": {
+        "mean": 0.91,
+        "min": 0.901,
+        "max": 0.919,
+        "stdev": 0.006633249580710806
+      },
+      "final_accuracy": {
+        "mean": 0.92,
+        "min": 0.904,
+        "max": 0.94,
+        "stdev": 0.017204650534085236
+      }
+    },
+    "horizon": {
+      "overall_accuracy": {
+        "mean": 0.8972,
+        "min": 0.876,
+        "max": 0.91,
+        "stdev": 0.013608820668963212
+      },
+      "final_accuracy": {
+        "mean": 0.9088,
+        "min": 0.868,
+        "max": 0.936,
+        "stdev": 0.028481572990268662
+      }
+    },
+    "capability": {
+      "overall_accuracy": {
+        "mean": 0.7116,
+        "min": 0.693,
+        "max": 0.729,
+        "stdev": 0.012992305415129383
+      },
+      "final_accuracy": {
+        "mean": 0.7096,
+        "min": 0.676,
+        "max": 0.76,
+        "stdev": 0.04104631530356896
+      }
+    },
+    "random": {
+      "overall_accuracy": {
+        "mean": 0.4412,
+        "min": 0.424,
+        "max": 0.461,
+        "stdev": 0.017311845655504227
+      },
+      "final_accuracy": {
+        "mean": 0.4144,
+        "min": 0.368,
+        "max": 0.456,
+        "stdev": 0.03353803810600734
+      }
+    }
+  },
+  "final_lift_over_capability": {
+    "mean": 0.19920000000000002,
+    "min": 0.17600000000000005,
+    "max": 0.22799999999999998,
+    "stdev": 0.02488372962399323
+  }
+}
